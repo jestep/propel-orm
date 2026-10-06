@@ -158,7 +158,7 @@ class PropelOnDemandCollection extends PropelCollection
         throw new PropelException('The On Demand Collection is read only');
     }
 
-    public function getArrayCopy()
+    public function getArrayCopy(): array
     {
         throw new PropelException('The On Demand Collection does not allow access by offset');
     }
