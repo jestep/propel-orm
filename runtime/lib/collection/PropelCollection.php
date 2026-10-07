@@ -397,7 +397,7 @@ class PropelCollection extends ArrayObject implements Serializable
      */
     public function getIterator(): ArrayIterator
     {
-        $this->iterator = new ArrayIterator();
+        $this->iterator = new ArrayIterator($this->getArrayCopy());
 
         return $this->iterator;
     }
